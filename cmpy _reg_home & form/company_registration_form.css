@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#registrationForm {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+header {
+  background-color: #a20f0f;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #a20f0f;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color:#a20f0f;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .banner-image {
+    padding: 10px;
+  }
+}
+.banner-container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; /* This will set the height of the banner image to 20% of the viewport height */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.banner-container img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+

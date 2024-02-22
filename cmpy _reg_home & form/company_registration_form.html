@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Registration Form</title>
+    <link rel="stylesheet" href="company_registration_form.css" />
+  </head>
+  <body>
+    <iframe
+      id="myIframe"
+      src="nav.html"
+      style="height: 150px; width: 100%; border: none"
+    ></iframe>
+
+    <script>
+      function resizeIframe() {
+        const iframe = document.getElementById("myIframe");
+        iframe.style.height =
+          iframe.contentWindow.document.documentElement.scrollHeight + "px";
+      }
+
+      window.addEventListener("load", resizeIframe);
+      window.addEventListener("resize", resizeIframe);
+    </script>
+    <form
+      id="registrationForm"
+      action="company_registration_form.php"
+      method="post"
+    >
+      <header>
+        <h1>Company Registration Form</h1>
+      </header>
+      <label for="companyName">Company Name:</label><br />
+      <input type="text" id="companyName" name="companyName" required /><br />
+      <label for="companyAddress">Company Address:</label><br />
+      <input
+        type="text"
+        id="companyAddress"
+        name="companyAddress"
+        required
+      /><br />
+      <label for="companyWebsite">Company Website:</label><br />
+      <input
+        type="url"
+        id="companyWebsite"
+        name="companyWebsite"
+        required
+      /><br />
+      <label for="jobPosition"
+        >Job Position(s) for which the company is hiring:</label
+      ><br />
+      <input type="text" id="jobPosition" name="jobPosition" required /><br />
+      <label for="description"
+        >Brief Description of the Company and the Job Position(s):</label
+      ><br />
+      <textarea id="description" name="description" required></textarea><br />
+      <label for="interviewPreferences"
+        >Date Preferences for the Interview:</label
+      ><br />
+      <input
+        type="date"
+        id="interviewPreferences"
+        name="interviewPreferences"
+        required
+      /><br />
+      <label for="eligibility">Eligibility Requirements:</label><br />
+      <textarea id="eligibility" name="eligibility" required></textarea><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
